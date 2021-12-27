@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>BINGO GAME</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body>
+    <main class="flexbox">
+      <span class="titles">
+        <h1>加碼</h1>
+        <h1>久林大樂透</h1>
+        <h3>最先獲得4條連線者獲勝，祝各位中大獎!!</h3>
+        <button onclick="bonus()" class="money">Show Me The Money</button>
+        <div id="mmoney" class="moneybox"></div>
+      </span>
+
+      <div class="scroll-logo">
+        <p class="scroll-text">KURIM</p>
+        <canvas id="my-canvas" style="width: 600px; height: 600px"></canvas>
+      </div>
+      <span class="button">
+        <button
+          id="draw-number"
+          class="draw-btn"
+          type="button"
+          alt="START"
+        ></button>
+        <button id="reset-numbers" class="reset-btn" type="reset">CLEAN</button>
+      </span>
+      <section id="container" class="container-balls"></section>
+      <section id="numberbox" class="numberboxcontainer"></section>
+    </main>
+    <div id="modal" class="modal">
+      <div>
+        <h3>Lottery not finished yet!</h3>
+        <p>Draw all of the one numbers and then reset.</p>
+        <button id="modal-btn" type="button" class="modal-btn">OK</button>
+      </div>
+    </div>
+
+    <!--    main javaScript file-->
+    <script src="./app.js" type="text/javascript"></script>
+  </body>
+</html>
