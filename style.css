@@ -15,7 +15,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 101vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* main title*/
